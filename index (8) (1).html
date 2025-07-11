@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yuvraj Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+  min-height: 100vh;
+  color: #2e2e2e;
+}
+
+/* Main Container */
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  color: white;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* Section Cards */
+section {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 25px 30px;
+  margin-top: 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-size: 26px;
+  color: #1a73e8;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Skills */
+.skills .skill {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #2c3e50;
+}
+
+.bar {
+  background-color: #e0e0e0;
+  height: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease;
+}
+
+.fill.html {
+  width: 70%;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.fill.css {
+  width: 70%;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+.fill.js {
+  width: 50%;
+  background: linear-gradient(to right, #43e97b, #38f9d7);
+}
+
+/* Projects */
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 20px;
+  color: #1e2a38;
+}
+
+.project p {
+  font-size: 15px;
+  color: #444;
+}
+
+/* Contact */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  color: #222;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+
+  </style>
+<div class="container">
+    <header>
+        <h1>Hi, I'm Yuvraj Mistrie</h1>
+        <p>Web Devloper & Student at Silver Oak Univercity, Ahemdabad</p>
+    </header>
+
+    <section class="intro">
+        <h2>Introduction</h2>
+        <p>Welcome to my portfolio! I am a self learning web devloper who is pasionate about creating websites. I'm currently studying in Silver Oak Univercity, based in Ahemdabad. I'm focusing on frontend technologies like HTML, CSS and JavaScript.</p>
+    </section>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I started learning web devlopment becouse I love to see ideas turning into real working websites. It's amazing how a simple code can make interactive and beautiful web pages. I'm still learning but improving day by day.</p>
+    </section>
+
+    <section class="skills">
+        <h2>Skilles</h2>
+        <div class="skill">
+            <label>HTML</label>
+            <div class="bar"><div class="fill html"></div></div>
+        </div>
+        <div class="skill">
+            <label>CSS</label>
+            <div class="bar"><div class="fill css"></div></div>
+        </div>
+        <div class="skill">
+            <label>JavaScript</label>
+            <div class="bar"><div class="fill js"></div></div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>📦 Simple Calculator</h3>
+            <p>A basic calculator using HTML, CSS and JS with simple functions and layout.</p>
+        </div>
+        <div class="project">
+            <h3>🌦 Weather App (Demo)</h3>
+            <p>This app fetches weather data using API and displays temperature of any city typed by user.</p>
+        </div>
+        <div class="project">
+            <h3>📝 Portfolio Website</h3>
+            <p>You are viewing it right now! This is my portfolio made with basic layout and skill bars.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>If you want to say hi or collabrate on something, feel free to contact me!</p>
+        <ul>
+            <li>📧 Email: yuvrajmistrie@email.com</li>
+            <li>📍 Location: Ahemdabad, Gujarat</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Yuvraj Mistrie. All rights reserved.</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
